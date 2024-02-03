@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pagina_principal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="pagina_principal.css">
+</head>
+<body>
+     
+  <header class="header">
+    <div class="menu container">
+      <a href="#" onclick="inicio()" class="logo">Inicio</a>
+      <input type="checkbox" id="menu"/>
+      <label for="menu">
+        <img src="menu.png" class="menu_icono" alt="">
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#" onclick="servicios()">Servicios</a></li>
+          <li><a href="#" onclick="productos()">Productos</a></li>
+          <li><a href="#" onclick="reservaciones()">Reservaciones</a></li>
+          <li><a href="#" onclick="contactos()">Contactos</a></li>
+        </ul>
+      </nav>
+      <div>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </div>
+
+    <div id="contenidoPrincipal" class="header-content container">
+      <div class="header-txt">
+        <h1>Servicio de Celulares</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quo facilis, iusto nemo aut veritatis debitis autem nesciunt nam vitae incidunt doloremque cupiditate sunt, distinctio iure minima. Amet, vel hic.
+        </p>
+       </div>
+    </div>
+
+    <div class="images">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="2.jpg" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="3.jpg" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="4.jpg" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="5.jpg" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+      <div class="rows">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+    </div>    
+
+  </header>
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="pagina_principal.js"></script>
+</body>
+</html>
